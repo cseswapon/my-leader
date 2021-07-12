@@ -1,0 +1,295 @@
+/* ----------------------------------------
+===== Google Font & common or utility =====
+------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    margin: 0px;
+    padding: 0px;
+}
+hr{
+    border: 1px solid #d1d1d1;
+    margin-left: 30px;
+    width: 86%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* ----------------------------------------
+============= Header Section ==============
+------------------------------------------- */
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #562EFF;
+}
+.header-continer{
+    margin: 0px auto;
+    padding: 0px;
+    position: sticky;
+    top: 0px;
+}
+.header-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+.logo-section img{
+    width: 44px;
+    height: 50px;
+}
+.logo-section a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.menu-section{
+    display: flex;
+    align-items: center;
+}
+.menu-section a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+/* ----------------------------------------
+============== Main Section ===============
+=============== Top Player ================
+------------------------------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container{
+    background-color: #ffffff;
+    width: 900px;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.top-player{
+    /* display: flex; */
+    margin-left: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.section-title{
+    color: #562EFF;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    font-size: 18px;
+    margin-left: 20px;
+}
+/* -----------------------------------------
+============== Main Section ================
+================ Top Blogs =================
+-------------------------------------------- */
+.top-blogs{
+    margin-left: 30px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.blog{
+    width: 375px;
+    display: flex;
+    align-items: center;
+}
+.blog-summery{
+    margin-left: 15px;
+}
+.blog-image img{
+    width: 177px;
+    height: 117px;
+}
+.blog-title{
+    font-size: 19px;
+}
+.blog-author{
+    color: gray;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+}
+/* -----------------------------------------
+============== Main Section ================
+============== Letest Course ===============
+-------------------------------------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+}
+.course-container{
+    background-color: #ffffff;
+    width: 900px;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.top-courses{
+    margin-left: 30px;
+}
+.courses-title{
+    color: #562EFF;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.course{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 12px gray;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.course-imeage img{
+    width: 225px;
+    height: 150px;
+}
+.course-title{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.course-ditels a{
+    text-decoration: none;
+    margin-top: 5px;
+    color: hotpink;
+}
+.fa-star.field{
+    color: rgb(238, 175, 15);
+}
+.fa-star.empty{
+    color: gainsboro;
+}
+.reating-point{
+    color: gray;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.time-destrection{
+    background-color: #FFE4E8;
+    color: hotpink;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.course-reating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 0px;
+    padding-top: 0px;
+}
+/* -----------------------------------------
+============== Last Section ================
+============== Footer Section ==============
+-------------------------------------------- */
+footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #562EFF;
+}
+.footer-section p{
+    text-align: center;
+    padding: 14px;
+    color: white;
+}
+/* -------------------------------------------
+============== Responcive web ================
+============== Media Query use ===============
+-------------------------------------------- */
+@media only screen and (max-width:688px){
+    .logo-section img{
+        width: 20px;
+        height: 30px;
+    }
+    .header-continer{
+        display: flex;
+        align-items: center;
+    }
+    .logo-section a{
+        font-size: 10px;
+    }
+    .menu-section a{
+        font-size: 10px;
+    }
+    .main-container,.course-container{
+        width: 100%;
+    }
+    .players,.blogs,.courses{
+        /* background-color:red; */
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+    }
+    .blog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: -28px;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .course-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    .main-container,.course-container{
+        width: 100%;
+    }
+    .players,.blogs,.courses{
+        /* background-color:red; */
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 20px;
+    }
+    .blog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: -28px;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .course-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+}
